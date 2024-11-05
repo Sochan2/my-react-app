@@ -1,3 +1,7 @@
+
+export const runtime = "edge";
+//test
+
 export async function GET(req) {
   try {
     // Retrieve the user
