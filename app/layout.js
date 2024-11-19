@@ -1,14 +1,7 @@
-
-import "../css/bootstrap-datepicker.css";
-import "../css/bootstrap.css";
-import "../css/style.css";
-import "../css/bootstrap.min.css";
-import "../css/font-awesome.css";
-import "../css/font-awesome.min.css";
-import "../css/font.css";
-import "../css/owl.transitions.css";
+import "../css/globals.css";
 
 import HeaderComponent from "../component/header";
+import FooterComponent from "../component/footer";
 import Script from 'next/script';
 //import Footer from "../component/footer";
 
@@ -37,8 +30,12 @@ export default function RootLayout({ children }) {
         <div id="wrapper">
           <HeaderComponent />
           {children}
+          <FooterComponent />
 
-          <Script src="/js/common/modernizr.js"></Script>
+
+        </div>
+
+        <Script src="/js/common/modernizr.js"></Script>
           <Script src="/js/common.js"></Script>
           <Script src="/js/common/jquery-1.11.1.min.js"></Script>
           <Script src="/js/common/bootstrap.min.js"></Script>
@@ -49,8 +46,6 @@ export default function RootLayout({ children }) {
           <Script src="/js/common/jquery-browser.js"></Script>
           <Script src="/js/scripts.js"></Script>
 
-
-        </div>
       </body>
     </html>
   );

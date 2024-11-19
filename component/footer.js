@@ -1,9 +1,7 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import { createRoot } from 'react-dom/client';
 
-function FooterComponent(){
+export default function FooterComponent(){
   return(
     <>
         <div id="footer-top" className="container">
@@ -136,21 +134,4 @@ function FooterComponent(){
 }
 
 
-export default function Footer() {
-  const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);  // クライアントサイドでコンポーネントがマウントされたことを示す
-
-    if (mounted) {
-      const headerElement = document.getElementById("footer");
-      if (headerElement) {
-        const root = createRoot(headerElement);
-        root.render(<FooterComponent />);  // HeaderComponent をレンダリング
-      }
-    }
-  }, [mounted]);  // `mounted` ステートの変化に依存
-
-  // サーバーサイドでは何もレンダリングしない
-  return null;
-}

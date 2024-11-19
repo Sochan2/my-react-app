@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function HeaderComponent() {
   return (
     <>
@@ -37,7 +39,7 @@ export default function HeaderComponent() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <a href="index.html" className="nav-logo"><img src="images/logo.png" alt="One Ring Rentals" /></a>
+              <Link href="/" className="nav-logo"><img src="images/logo.png" alt="One Ring Rentals" /></Link>
 
               <nav className="navbar">
                 <button id="nav-mobile-btn"><i className="fa fa-bars"></i></button>
@@ -45,9 +47,9 @@ export default function HeaderComponent() {
                 <ul className="nav navbar-nav">
                   <li><a href="#">Find a Rental</a></li>
                   <li><a href="#">List your rental</a></li>
-                  <li><a href="regions.html">Regions</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><Link  href="/regions">Regions</Link></li>
+                  <li><Link href="/news">News</Link></li>
+                  <li><Link href="/contact">Contact</Link></li>
                 </ul>
 
               </nav>

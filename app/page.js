@@ -1,16 +1,17 @@
-'use client'; 
+//'use client'; 
 
 import "../css/globals.css";
 export default function HomePage() {
   return (
     <>
-    <Slide />
-    <AdvancedResearch />
-    <MainContent />
+      <Slide />
+      <AdvancedResearch />
+      <MainContent />
     </>
   );
 
 }
+
 
 
 function Slide() {
@@ -533,4 +534,3 @@ function MainContent(){
 
   );
 }
-
