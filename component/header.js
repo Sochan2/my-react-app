@@ -39,7 +39,7 @@ export default function HeaderComponent() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <Link href="/" className="nav-logo"><img src="images/logo.png" alt="One Ring Rentals" /></Link>
+              <Link href="/" className="nav-logo"><img src="/images/logo.png" alt="One Ring Rentals" /></Link>
 
               <nav className="navbar">
                 <button id="nav-mobile-btn"><i className="fa fa-bars"></i></button>

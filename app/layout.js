@@ -1,9 +1,14 @@
+import "../css/bootstrap.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../css/globals.css";
+import "../css/bootstrap-datepicker.css";
+import "../css/font-awesome.css";
+
 
 import HeaderComponent from "../component/header";
 import FooterComponent from "../component/footer";
 import Script from 'next/script';
-//import Footer from "../component/footer";
+
 
 export const metadata = {
   title: 'Next.js',
@@ -13,7 +18,7 @@ export const metadata = {
     description: "A modern web application built with Next.js",
     images: [
       {
-        url: "/logo.png",
+        url: "/images/logo.png",
         width: 800,
         height: 600,
         alt: "App Logo",
@@ -25,7 +30,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <>
     <html lang="en">
+
+   
+
+
+        <Script src="/js/common/jquery-1.11.1.min.js" />
+        <Script src="/js/common/chosen.min.js" />
+          <Script src="/js/common/bootstrap.min.js" />
+          <Script src="/js/common/bootstrap-datepicker.js" />
+          <Script src="/js/common/bootstrap-checkbox.js" />
+          <Script src="/js/common/modernizr.js" />
+          <Script src="/js/common.js" />
+          <Script src="/js/common/nice-scroll.js" /> 
+          <Script src="/js/common/jquery-browser.js" />
+          <Script src="/js/scripts.js" />
+    
+          
       <body>
         <div id="wrapper">
           <HeaderComponent />
@@ -35,18 +57,8 @@ export default function RootLayout({ children }) {
 
         </div>
 
-        <Script src="/js/common/modernizr.js"></Script>
-          <Script src="/js/common.js"></Script>
-          <Script src="/js/common/jquery-1.11.1.min.js"></Script>
-          <Script src="/js/common/bootstrap.min.js"></Script>
-          <Script src="/js/common/bootstrap-datepicker.js"></Script>
-          <Script src="/js/common/chosen.min.js"></Script>
-          <Script src="/js/common/bootstrap-checkbox.js"></Script>
-          <Script src="/js/common/nice-scroll.js"></Script>
-          <Script src="/js/common/jquery-browser.js"></Script>
-          <Script src="/js/scripts.js"></Script>
-
       </body>
     </html>
+    </>
   );
 }

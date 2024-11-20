@@ -8,7 +8,7 @@ export default function FooterComponent(){
           <div className="row">
             <div className="block col-sm-3">
               <a href="#"
-                ><img src="images/logo.png" alt="One Ring Rentals"
+                ><img src="/images/logo.png" alt="One Ring Rentals"
               /></a>
               <br /><br />
               <p>

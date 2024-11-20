@@ -1,4 +1,4 @@
-//'use client'; 
+'use client'; 
 
 import "../css/globals.css";
 export default function HomePage() {
@@ -22,64 +22,73 @@ function Slide() {
     text: ["Previous", "Next"]
   };
 
-  return (
-    <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-      <div className="carousel-inner" role="listbox">
-        <div
-          className="item active"
-          id="slide1"
-          style={{
-            background: "url(http://placehold.it/1920x605) no-repeat left center",
-            backgroundSize: "cover"
-          }}
-        >
-          <div className="carousel-caption">
-            <div className="caption sfr slider-title">Breathtaking views</div>
-            <div className="caption sfl slider-subtitle">
-              Relaxation in the Bay of Belfalas
+  
+    
+    return (
+      <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner" role="listbox">
+          <div
+            className="item active"
+            id="slide1"
+            style={{
+              background: "url(http://placehold.it/1920x605) no-repeat left center",
+              backgroundSize: "cover"
+            }}
+          >
+            <div className="carousel-caption">
+              <div className="caption sfr slider-title">Breathtaking views</div>
+              <div className="caption sfl slider-subtitle">
+                Relaxation in the Bay of Belfalas
+              </div>
+              <a href="#" className="caption sfb btn btn-default btn-lg">Learn More</a>
             </div>
-            <a href="#" className="caption sfb btn btn-default btn-lg">Learn More</a>
+          </div>
+          <div
+            className="item"
+            id="slide2"
+            style={{
+              background: "url(http://placehold.it/1920x605) no-repeat left center",
+              backgroundSize: "cover"
+            }}
+          >
+            <div className="carousel-caption">
+              <div className="caption sfr slider-title">The simple life</div>
+              <div className="caption sfl slider-subtitle">
+                Lush gardens in Mordor
+              </div>
+              <a href="#" className="caption sfb btn btn-default btn-lg">Learn More</a>
+            </div>
           </div>
         </div>
-        <div
-          className="item"
-          id="slide2"
-          style={{
-            background: "url(http://placehold.it/1920x605) no-repeat left center",
-            backgroundSize: "cover"
-          }}
-        >
-          <div className="carousel-caption">
-            <div className="caption sfr slider-title">The simple life</div>
-            <div className="caption sfl slider-subtitle">
-              Lush gardens in Mordor
-            </div>
-            <a href="#" className="caption sfb btn btn-default btn-lg">Learn More</a>
-          </div>
-        </div>
+  
+        <div id="home-search-section"></div>
+        
+        {Controls.classNames.map((className, index) => (
+          <a
+            key={Controls.classNames[index]}
+            className={className}
+            role="button"
+            data-slide={Controls.dataSlide[index]}
+          >
+            <span className={Controls.spanClass[index]}></span>
+            <span className="sr-only">{Controls.text[index]}</span>
+          </a>
+        ))}
       </div>
+    );
+    
+  }
+  
+    
+ 
 
-      <div id="home-search-section"></div>
-      
-      {Controls.classNames.map((className, index) => (
-        <a
-          key={Controls.classNames[index]}
-          className={className}
-          role="button"
-          data-slide={Controls.dataSlide[index]}
-        >
-          <span className={Controls.spanClass[index]}></span>
-          <span className="sr-only">{Controls.text[index]}</span>
-        </a>
-      ))}
-    </div>
-  );
-}
+
 
 function NightOption(){
   const night= [];
   for(let i=1; i<=14; i++){
     night.push(i);
+
   }
 
 
