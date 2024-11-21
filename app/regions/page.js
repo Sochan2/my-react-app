@@ -1,4 +1,5 @@
 'use client';
+export const runtime = "edge";
 import React from 'react';
 import {useState} from 'react';
 import {sculptureList} from "../data/list"
@@ -115,7 +116,7 @@ function RegionMain(){
           Next
         </button>
         <h2 className="title is-5">
-          <i>{sculpture.name}</i> by {sculpture.artist}
+          <i>{sculpture.name}</i> 
         </h2>
         <h3 className="subtitle is-6">
           ({index + 1} of {sculptureList.length})

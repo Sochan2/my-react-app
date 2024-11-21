@@ -1,5 +1,5 @@
 'use client'; 
-
+export const runtime = "edge";
 import "../css/globals.css";
 export default function HomePage() {
   return (
