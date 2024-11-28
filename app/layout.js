@@ -46,16 +46,16 @@ export default function RootLayout({ children }) {
         </div>
 
        
-        <Script src="/js/common/jquery-1.11.1.min.js" strategy="beforeInteractive" />
-        <Script src="/js/common/chosen.min.js" strategy="lazyOnload" />
-        <Script src="/js/common/bootstrap.min.js" strategy="lazyOnload" />
-        <Script src="/js/common/bootstrap-datepicker.js" strategy="lazyOnload" />
-        <Script src="/js/common/bootstrap-checkbox.js" strategy="lazyOnload" />
-        <Script src="/js/common/modernizr.js" strategy="lazyOnload" />
-        <Script src="/js/common.js" strategy="lazyOnload" />
-        <Script src="/js/common/nice-scroll.js" strategy="lazyOnload" />
-        <Script src="/js/common/jquery-browser.js" strategy="lazyOnload" />
-        <Script src="/js/scripts.js" strategy="lazyOnload" />
+        <Script src="/js/common/jquery-1.11.1.min.js"  />
+        <Script src="/js/common/chosen.min.js"  />
+        <Script src="/js/common/bootstrap.min.js"  />
+        <Script src="/js/common/bootstrap-datepicker.js"  />
+        <Script src="/js/common/bootstrap-checkbox.js"  />
+        <Script src="/js/common/modernizr.js" />
+        <Script src="/js/common.js"  />
+        <Script src="/js/common/nice-scroll.js"  />
+        <Script src="/js/common/jquery-browser.js"  />
+        <Script src="/js/scripts.js"  />
       </body>
     </html>
   );

@@ -2,8 +2,9 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { use } from "react";
-import { sculptureList } from "../../data/list.js";
+import { perthList } from "../../data/list.js";
 
+import "../../css/globals.css";
 export const runtime = "edge";
 
 export default function GalleryItem({ params }) {
@@ -12,29 +13,29 @@ export default function GalleryItem({ params }) {
   // useParams => 1
   const { id } = use(params);
 
-  const sculpture = sculptureList.find((item) => item.id == id);
+  const perth = perthList.find((item) => item.id == id);
 
-  if (!sculpture) {
+  if (!perth) {
     notFound();
   }
   // render template
   return (
     <div className="box mt-1">
-      {sculpture ? (
+      {perth ? (
         <>
           <h2 className="title is-5">
-            <i>{sculpture.name}</i> by {sculpture.artist}
+            <i>{perth.name}</i> by {perth.artist}
           </h2>
           <h3 className="subtitle is-6">
-            ({sculpture.id + 1} of {sculptureList.length})
+            ({perth.id + 1} of {perthList.length})
           </h3>
           <Image
-            src={sculpture.url}
-            alt={sculpture.alt}
+            src={perth.url}
+            alt={perth.alt}
             width={400}
             height={200}
           />
-          <p>{sculpture.description}</p>
+          <p>{perth.description}</p>
         </>
       ) : (
         <p> Item not found</p>

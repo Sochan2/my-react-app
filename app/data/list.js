@@ -1,4 +1,4 @@
-export const sculptureList = [
+export const perthList = [
   {
     id: 1,
     name: "Ningaloo Reef",

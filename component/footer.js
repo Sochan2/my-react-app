@@ -34,28 +34,28 @@ export default function FooterComponent(){
                   <ul name="footer-listings">
                     <li>
                       <div className="image">
-                        <a href="properties-detail.html"
+                        <a href=""
                           ><img src="http://placehold.it/760x670" alt=""
                         /></a>
                       </div>
-                      <p><a href="properties-detail.html">Rhovanion</a></p>
+                      <p><a href="">Rhovanion</a></p>
                     </li>
                     <li>
                       <div className="image">
-                        <a href="properties-detail.html"
+                        <a href=""
                           ><img src="http://placehold.it/760x670" alt=""
                         /></a>
                       </div>
-                      <p><a href="properties-detail.html">Eriador</a></p>
+                      <p><a href="">Eriador</a></p>
                     </li>
                     <li>
                       <div className="image">
-                        <a href="properties-detail.html"
+                        <a href=""
                           ><img src="http://placehold.it/760x670" alt=""
                         /></a>
                       </div>
                       <p>
-                        <a href="properties-detail.html">Bay of Belfalas</a>
+                        <a href="">Bay of Belfalas</a>
                       </p>
                     </li>
                   </ul>
@@ -64,27 +64,27 @@ export default function FooterComponent(){
                   <ul className="footer-listings">
                     <li>
                       <div className="image">
-                        <a href="properties-detail.html"
+                        <a href=""
                           ><img src="http://placehold.it/760x670" alt=""
                         /></a>
                       </div>
-                      <p><a href="properties-detail.html">Mordor</a></p>
+                      <p><a href="">Mordor</a></p>
                     </li>
                     <li>
                       <div className="image">
-                        <a href="properties-detail.html"
+                        <a href=""
                           ><img src="http://placehold.it/760x670" alt=""
                         /></a>
                       </div>
-                      <p><a href="properties-detail.html">Arnor</a></p>
+                      <p><a href="">Arnor</a></p>
                     </li>
                     <li>
                       <div className="image">
-                        <a href="properties-detail.html"
+                        <a href=""
                           ><img src="http://placehold.it/760x670" alt=""
                         /></a>
                       </div>
-                      <p><a href="properties-detail.html">Forlindon</a></p>
+                      <p><a href="">Forlindon</a></p>
                     </li>
                   </ul>
                 </div>

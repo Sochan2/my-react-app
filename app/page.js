@@ -1,6 +1,5 @@
 'use client'; 
 export const runtime = "edge";
-import "../css/globals.css";
 export default function HomePage() {
   return (
     <>
@@ -232,10 +231,8 @@ function Contents(){
     {content.map((item,index)=>(
       <div className="item col-md-4" key={index}>
                   <div className="image">
-                    <a href="properties-detail.html">
                     <h3>{item.heading3}</h3>
-                    <span className="location">{item.location}</span>
-                    </a>
+                   <span className="location">{item.location}</span> 
                     {item.image}
                     </div>
                     <div className="price">
