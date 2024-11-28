@@ -4,7 +4,7 @@ import Image from "next/image";
 import { use } from "react";
 import { perthList } from "../../data/list.js";
 
-import "../../css/globals.css";
+import "../../../css/globals.css";
 export const runtime = "edge";
 
 export default function GalleryItem({ params }) {
