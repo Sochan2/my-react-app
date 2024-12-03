@@ -2,7 +2,7 @@
 export const runtime = "edge";
 import React from 'react';
 import {useState} from 'react';
-import {sculptureList} from "../data/list"
+import {perthList} from "../data/list"
 import Image from 'next/image';
 
 import "../../css/globals.css";
@@ -75,7 +75,7 @@ function RegionMain(){
     <div className="container">
       <div className="row">
         <div className="main col-sm-12">
-          <h1 className="section-title">Regions in Australia</h1>
+          <h1 className="section-title">Region in Australia</h1>
           <div className="grid-style1 clearfix">
             {region.map((region_items,index)=>(
               <div className="item col-md-4" key={index}>
@@ -105,10 +105,10 @@ function RegionMain(){
     const [index, setIndex] = useState(0);
 
     function handleClick() {
-      setIndex((index + 1) % sculptureList.length);
+      setIndex((index + 1) % perthList.length);
     }
 
-    let sculpture = sculptureList[index];
+    let perth = perthList[index];
     return (
       <div className="box">
         {/* <Header title="New Gallery" /> */}
@@ -116,19 +116,19 @@ function RegionMain(){
           Next
         </button>
         <h2 className="title is-5">
-          <i>{sculpture.name}</i> 
+          <i>{perth.name}</i> 
         </h2>
         <h3 className="subtitle is-6">
-          ({index + 1} of {sculptureList.length})
+          ({index + 1} of {perthList.length})
         </h3>
-        {/* <img src={sculpture.url} alt={sculpture.alt} /> */}
+        {/* <img src={perth.url} alt={perth.alt} /> */}
         <Image
-            src={sculpture.url}
-            alt={sculpture.alt}
+            src={perth.url}
+            alt={perth.alt}
             width={400}
             height={200}
         />
-        <p>{sculpture.description}</p>
+        <p>{perth.description}</p>
       </div>
     );
 };
